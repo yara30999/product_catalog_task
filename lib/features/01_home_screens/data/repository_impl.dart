@@ -3,7 +3,7 @@ import 'package:products_app/core/network/error_handler.dart';
 import 'package:products_app/core/network/failure.dart';
 import 'package:products_app/core/network/network_info.dart';
 import 'package:products_app/features/01_home_screens/data/remote_data_source.dart';
-import 'package:products_app/features/01_home_screens/domain/mapper.dart';
+import 'package:products_app/features/01_home_screens/data/mapper.dart';
 import 'package:products_app/features/01_home_screens/domain/product_entity.dart';
 import 'package:products_app/features/01_home_screens/domain/repository.dart';
 

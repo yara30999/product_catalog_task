@@ -8,12 +8,9 @@ class SkipButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: Alignment.topRight,
-      child: TextButton(
-        onPressed: onSkip,
-        child: Text(context.tr("Skip"), style: TextStyle(fontSize: 18.sp)),
-      ),
+    return TextButton(
+      onPressed: onSkip,
+      child: Text(context.tr("Skip"), style: TextStyle(fontSize: 18.sp)),
     );
   }
 }

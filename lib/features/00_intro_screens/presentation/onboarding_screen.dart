@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:products_app/core/resourses/color_manager.dart';
+import 'package:products_app/core/widgets/language_toggle_switch.dart';
 import 'package:products_app/features/00_intro_screens/presentation/widgets/onboarding_nav_buttons.dart';
 import 'package:products_app/features/00_intro_screens/presentation/widgets/onboarding_page_view.dart';
 import 'package:products_app/features/00_intro_screens/presentation/widgets/page_indicator.dart';
@@ -53,7 +54,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(height: 20.h),
-          SkipButton(onSkip: goToNextScreen),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Spacer(),
+              SkipButton(onSkip: goToNextScreen),
+            ],
+          ),
           Expanded(
             child: OnboardingPageView(
               pageController: _pageController,
@@ -71,6 +78,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             pageController: _pageController,
             onFinish: goToNextScreen,
           ),
+          LanguageToggleSwitch(),
           SizedBox(height: 40.h),
         ],
       ),

@@ -6,5 +6,8 @@ class ConstantsManager {
   static const String token = "SEND TOKEN HERE";
   static const String empty = "";
   static const int zero = 0;
+  static const double zeroDouble = 0.0;
   static const Duration apiTimeOut = Duration(minutes: 2);
 }
+
+enum Category { electronics, jewelery, menSClothing, womenSClothing }

@@ -4,6 +4,8 @@
 
 import 'dart:convert';
 
+import 'package:products_app/core/resourses/constants_manager.dart';
+
 List<ProductResponse> productsResponseFromJson(String str) =>
     List<ProductResponse>.from(
       json.decode(str).map((x) => ProductResponse.fromJson(x)),
@@ -19,7 +21,7 @@ class ProductResponse {
   String description;
   Category category;
   String image;
-  Rating rating;
+  RatingResponse rating;
 
   ProductResponse({
     required this.id,
@@ -39,7 +41,7 @@ class ProductResponse {
         description: json["description"],
         category: categoryValues.map[json["category"]]!,
         image: json["image"],
-        rating: Rating.fromJson(json["rating"]),
+        rating: RatingResponse.fromJson(json["rating"]),
       );
 
   Map<String, dynamic> toJson() => {
@@ -53,8 +55,6 @@ class ProductResponse {
   };
 }
 
-enum Category { electronics, jewelery, menSClothing, womenSClothing }
-
 final categoryValues = EnumValues({
   "electronics": Category.electronics,
   "jewelery": Category.jewelery,
@@ -62,14 +62,14 @@ final categoryValues = EnumValues({
   "women's clothing": Category.womenSClothing,
 });
 
-class Rating {
+class RatingResponse {
   double rate;
   int count;
 
-  Rating({required this.rate, required this.count});
+  RatingResponse({required this.rate, required this.count});
 
-  factory Rating.fromJson(Map<String, dynamic> json) =>
-      Rating(rate: json["rate"]?.toDouble(), count: json["count"]);
+  factory RatingResponse.fromJson(Map<String, dynamic> json) =>
+      RatingResponse(rate: json["rate"]?.toDouble(), count: json["count"]);
 
   Map<String, dynamic> toJson() => {"rate": rate, "count": count};
 }

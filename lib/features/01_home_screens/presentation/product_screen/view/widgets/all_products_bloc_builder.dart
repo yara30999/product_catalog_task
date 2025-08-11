@@ -15,7 +15,7 @@ class AllProductsBlocBuilder extends StatelessWidget {
           case AllProductsLoading():
             return const Center(child: CircularProgressIndicator());
           case AllProductSuccess():
-            return ProductsGridView();
+            return ProductsGridView(state.products);
           case AllProductsError():
             return Center(
               child: Text(

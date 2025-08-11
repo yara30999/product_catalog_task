@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -31,7 +32,7 @@ class OnboardingNavigationButtons extends StatelessWidget {
               children: [
                 const Icon(Icons.arrow_back),
                 SizedBox(width: 10.w),
-                Text("Back", style: TextStyle(fontSize: 18.sp)),
+                Text(context.tr("Back"), style: TextStyle(fontSize: 18.sp)),
               ],
             ),
           )
@@ -52,7 +53,9 @@ class OnboardingNavigationButtons extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                currentPage == totalPages - 1 ? "Finish" : "Next",
+                currentPage == totalPages - 1
+                    ? context.tr("Finish")
+                    : context.tr("Next"),
                 style: TextStyle(fontSize: 18.sp),
               ),
               SizedBox(width: 10.w),

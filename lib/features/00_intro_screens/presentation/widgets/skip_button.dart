@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -11,7 +12,7 @@ class SkipButton extends StatelessWidget {
       alignment: Alignment.topRight,
       child: TextButton(
         onPressed: onSkip,
-        child: Text("Skip", style: TextStyle(fontSize: 18.sp)),
+        child: Text(context.tr("Skip"), style: TextStyle(fontSize: 18.sp)),
       ),
     );
   }

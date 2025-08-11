@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:products_app/core/resourses/color_manager.dart';
@@ -12,8 +13,12 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp.router(
+        routerConfig: router,
         title: 'Product Catalog task - Yara Elniny',
         debugShowCheckedModeBanner: false,
+        localizationsDelegates: context.localizationDelegates,
+        supportedLocales: context.supportedLocales,
+        locale: context.locale,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
             seedColor: ColorsManager.primaryColor,
@@ -24,7 +29,6 @@ class MyApp extends StatelessWidget {
             elevation: 0,
           ),
         ),
-        routerConfig: router,
       ),
     );
   }

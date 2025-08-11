@@ -1,0 +1,25 @@
+{
+  "Onboarding": "شاشة الترحيب",
+  "noRouteFound": "لم يتم العثور على مسار",
+  "success": "تم بنجاح",
+  "bad_request_error": "طلب غير صالح. حاول مرة أخرى لاحقًا",
+  "incorrect_certificate_error": "شهادة غير صحيحة",
+  "unauthorized_error": "المستخدم غير مصرح به، حاول مرة أخرى لاحقًا",
+  "forbidden_error": "طلب ممنوع. حاول مرة أخرى في وقت لاحق",
+  "internal_server_error": "حدث خطأ ما، حاول مرة أخرى لاحقًا",
+  "not_found_error": "لم يتم العثور على عنوان URL، حاول مرة أخرى لاحقًا",
+  "connection_timeout_error": "خطأ في انتهاء المهلة، حاول مرة أخرى لاحقًا",
+  "cancel_error": "تم إلغاء الطلب، حاول مرة أخرى لاحقاً",
+  "recieve_timeout_error": "تلقي خطأ انتهاء المهلة، حاول مرة أخرى لاحقًا",
+  "send_timeout_error": "أرسل خطأ انتهاء المهلة، حاول مرة أخرى لاحقًا",
+  "cache_error": "خطأ في ذاكرة التخزين المؤقت، حاول مرة أخرى لاحقًا",
+  "no_internet_connection_error": "الرجاء التحقق من اتصال الانترنت الخاص بك",
+  "unknown_error": "حدث خطأ ما، حاول مرة أخرى لاحقًا",
+
+  "Skip": "تخطي",
+  "Back": "رجوع",
+  "Finish": "إنهاء",
+  "Next": "التالي",
+  "Discover amazing products at great prices": "اكتشف منتجات مذهلة بأسعار رائعة",
+  "Shop easily and securely from anywhere": "تسوق بسهولة وأمان من أي مكان"
+}

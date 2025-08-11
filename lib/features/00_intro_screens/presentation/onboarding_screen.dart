@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -41,7 +42,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Onboarding", style: TextStyle(fontSize: 24.sp)),
+        title: Text(
+          context.tr("Onboarding"),
+          style: TextStyle(fontSize: 24.sp),
+        ),
         centerTitle: true,
         foregroundColor: ColorsManager.white,
       ),

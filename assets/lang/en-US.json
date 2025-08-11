@@ -1,0 +1,25 @@
+{
+  "Onboarding": "Onboarding",
+  "noRouteFound": "noRouteFound",
+  "success": "success",
+  "bad_request_error": "bad request. try again later",
+  "incorrect_certificate_error": "incorrect certificate",
+  "unauthorized_error": "user unauthorized, try again later",
+  "forbidden_error": "forbidden request. try again later",
+  "internal_server_error": "some thing went wrong, try again later",
+  "not_found_error": "url not found, try again later",
+  "connection_timeout_error": "Time out error, Try again later",
+  "cancel_error": "Request was cancelled, Try again later",
+  "recieve_timeout_error": "Recieve time out error, Try again later",
+  "send_timeout_error": "Send time out error, Try again later",
+  "cache_error": "cache error, try again later",
+  "no_internet_connection_error": "Please check your internet connection",
+  "unknown_error": "some thing went wrong, try again later",
+
+  "Skip": "Skip",
+  "Back": "Back",
+  "Finish": "Finish",
+  "Next": "Next",
+  "Discover amazing products at great prices": "Discover amazing products at great prices",
+  "Shop easily and securely from anywhere": "Shop easily and securely from anywhere"
+}

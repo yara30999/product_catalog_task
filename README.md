@@ -19,21 +19,19 @@ This project follows **Clean Architecture** principles with clear separation of 
 
 ```
 lib/
-├── core/                     # Core functionality and utilities
-│   ├── di/                   # Dependency injection setup
-│   ├── routing/              # Navigation and routing
-│   ├── utils/                # Utility functions and constants
-│   ├── themes/               # App themes and styling
-│   └── localization/         # Internationalization files
-├── features/                 # Feature modules
-│   ├── splash/
-│   │   ├── data/            # Data sources and repositories
-│   │   ├── logic/           # Business logic (Cubit)
-│   │   └── ui/              # UI components and screens
-│   ├── onboarding/
-│   ├── products/
-│   └── product_details/
-└── main.dart                # App entry point
+├── core/
+│   ├── network/
+│   ├── resourses/
+│   ├── utils/
+│   ├── widgets/
+│   └── my_app.dart
+├── features/
+│   ├── 00_intro_screens/
+│   └── 01_home_screens/
+│           ├──data/
+│           ├──domain/
+│           └──presentation/
+└── main.dart
 ```
 
 ### Architecture Layers
@@ -71,9 +69,11 @@ dependencies:
 
 ```yaml
 dev_dependencies:
-  flutter_test: ^3.x.x
-  flutter_lints: ^3.x.x # Linting rules
-  build_runner: ^2.x.x # Code generation
+    flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  retrofit_generator: ^10.0.1
+  build_runner: ^2.6.0
 ```
 
 ## 🚀 Getting Started

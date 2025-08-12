@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:products_app/features/01_home_screens/domain/product_entity.dart';
 import 'package:products_app/features/01_home_screens/presentation/product_screen/view/widgets/product_card.dart';
 
-class ProductsGridView extends StatelessWidget {
+class ProductsListView extends StatelessWidget {
   final List<ProductEntity> products;
-  const ProductsGridView(this.products, {super.key});
+  const ProductsListView(this.products, {super.key});
 
   @override
   Widget build(BuildContext context) {
